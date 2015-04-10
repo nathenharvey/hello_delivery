@@ -18,3 +18,6 @@ Quick intro to using the delivery cli
 from within the hello_delivery cookbook
 * `delivery setup --user=none --server=none.io --ent=none --org=none`
 * create a `.delivery/config.json` file
+
+## Local Testing
+* `delivery job verify syntax`
