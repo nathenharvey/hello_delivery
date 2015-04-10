@@ -1,0 +1,6 @@
+enterprise = "none"
+git_port = "8989"
+organization = "none"
+pipeline = "master"
+server = "none.io"
+user = "none"
