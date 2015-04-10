@@ -30,6 +30,6 @@ from within the hello_delivery cookbook
     url = git@github.com:nathenharvey/hello_delivery.git
     fetch = +refs/heads/*:refs/remotes/delivery/*
 
-## Sumbit PR:
+## Create new branches for review / PR
 
 * `delivery review`
