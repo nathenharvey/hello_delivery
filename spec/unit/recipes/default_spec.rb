@@ -19,5 +19,22 @@ describe 'hello_delivery::default' do
       chef_run # This should not raise an error
     end
 
+    it 'installs httpd' do
+      expect(chef_run).to install_package 'httpd'
+    end
+
+    it 'starts httpd' do
+      expect(chef_run).to start_service 'httpd'
+    end
+
+    it 'enables httpd' do
+      expect(chef_run).to enable_service 'httpd'
+    end
+
+    it 'creates a home page' do
+      expect(chef_run).to(
+        render_file('/var/www/html/index.html').with_content(/Delivery/)
+      )
+    end
   end
 end
