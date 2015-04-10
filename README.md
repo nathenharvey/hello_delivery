@@ -20,4 +20,16 @@ from within the hello_delivery cookbook
 * create a `.delivery/config.json` file
 
 ## Local Testing
-* `delivery job verify syntax`
+* `delivery job verify syntax` - not working
+* `delivery job verify lint`
+* `delivery job verify unit`
+
+## Add a remote git named 'delivery'
+
+    [remote "delivery"]
+    url = git@github.com:nathenharvey/hello_delivery.git
+    fetch = +refs/heads/*:refs/remotes/delivery/*
+
+## Sumbit PR:
+
+* `delivery review`

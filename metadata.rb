@@ -5,4 +5,3 @@ license          'all_rights'
 description      'Installs/Configures hello_delivery'
 long_description 'Installs/Configures hello_delivery'
 version          '0.1.0'
-
