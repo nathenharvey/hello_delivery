@@ -32,7 +32,9 @@ describe 'hello_delivery::default' do
     end
 
     it 'creates a home page' do
-      expect(chef_run).to render_file('/var/www/html/index.html').with_content(/Delivery/)
+      expect(chef_run).to( 
+        render_file('/var/www/html/index.html').with_content(/Delivery/)
+      )
     end
   end
 end
